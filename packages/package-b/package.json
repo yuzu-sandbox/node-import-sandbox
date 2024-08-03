@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js && tsc -p ./ --emitDeclarationOnly -d"
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js --external:package-a && tsc -p ./ --emitDeclarationOnly -d"
   },
   "devDependencies": {
     "esbuild": "0.23.0",
