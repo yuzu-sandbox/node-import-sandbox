@@ -1209,7 +1209,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "package-a@workspace:packages/package-a"
   dependencies:
-    esbuild: "npm:0.23.0"
     typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
@@ -1218,7 +1217,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "package-b@workspace:packages/package-b"
   dependencies:
-    esbuild: "npm:0.23.0"
     package-a: "workspace:^"
     typescript: "npm:5.5.4"
   languageName: unknown
@@ -1229,6 +1227,7 @@ __metadata:
   resolution: "package-c@workspace:packages/package-c"
   dependencies:
     esbuild: "npm:0.23.0"
+    package-a: "workspace:^"
     package-b: "workspace:^"
     tsx: "npm:4.16.5"
     typescript: "npm:5.5.4"
