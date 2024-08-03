@@ -1,5 +1,4 @@
-import { Hoge } from "package-a";
-import { compareHoge } from "package-b";
+import { Hoge, compareHoge } from "package-b";
 
 const hoge = new Hoge(5);
 
